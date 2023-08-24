@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>certain</title>
+</head>
+<body>
+<h1 th:text="${activity.getTitle()}"></h1>
+
+<form th:method="DELETE" th:action="@{/chill/{id}(id=${activity.getId()})}">
+    <input type="submit" value="delete!">
+</form>
+
+</body>
+</html>
